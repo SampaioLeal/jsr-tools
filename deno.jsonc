@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "lint": "deno lint ./",
+    "test": "deno test -A ./",
+    "check": "deno check ./src/main.ts",
+    "run": "deno run --allow-read ./src/main.ts",
+    "build": "deno compile --allow-read --output ./builds/butiko ./src/main.ts"
+  },
+  "imports": {
+    "deno/": "https://deno.land/std@0.215.0/",
+    "cliffy/": "https://deno.land/x/cliffy@v1.0.0-rc.3/",
+    "dax/": "https://deno.land/x/dax@0.34.0/"
+  }
+}
